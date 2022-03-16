@@ -21,7 +21,7 @@ $(function () {
 });
 $(function () {
     $(".typed").typed({
-        strings: ["14.03.2022 Рейд", "#НетВойне", "ANTI-SCAMMMER", "Python Developer", "coder", "vzlom jopi", "hmmm...", "bruh", "Hack system...", "h@Cк3D!"],
+        strings: ["Крым ничей", "#НетВойне", "ANTI-SCAMMMER", "Python Developer", "coder", "vzlom jopi", "hmmm...", "bruh", "Hack system...", "h@Cк3D!"],
         typeSpeed: 30,
         backSpeed: 0,
         cursorChar: ['❚'],
