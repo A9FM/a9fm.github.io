@@ -66,13 +66,9 @@ body {
     background: none;
     padding: 35px;
     color: var(--text-color);
-    border-radius: 16px; 
-    -webkit-border-radius: 16px;
-    -moz-border-radius: 16px;
-    -khtml-border-radius: 16px;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(15px);
-    border: var(--text-color) solid 3px;
+    border-radius: 25px;
+    backdrop-filter: blur(50px);
+    border: var(--text-color) solid 4px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
