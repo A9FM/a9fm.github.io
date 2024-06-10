@@ -1,0 +1,294 @@
+:root {
+--text-color:#dc143c;
+--over-color:#fefefe;
+--color-button:#fff3
+}
+
+body {
+width:100%;
+min-height:100%;
+margin:0;
+background:var(--back-gif) center;
+background-size:cover;
+display:flex;
+font-family:'Product Sans';
+font:'Product Sans'
+}
+
+.typed {
+opacity:.8;
+-webkit-text-stroke:.2px #000;
+-webkit-text-fill-color:var(--text-color)
+}
+
+.typed::after {
+content:'❚';
+display:inline;
+-webkit-animation:blink .5s infinite;
+-moz-animation:blink .5s infinite;
+animation:blink .5s infinite
+}
+
+@keyframes blink {
+50% {
+opacity:0
+}
+
+0%,100% {
+opacity:1
+}
+}
+
+@-webkit-keyframes blink {
+50% {
+opacity:0
+}
+
+0%,100% {
+opacity:1
+}
+}
+
+@-moz-keyframes blink {
+50% {
+opacity:0
+}
+
+0%,100% {
+opacity:1
+}
+}
+
+.typed-cursor {
+opacity:0;
+display:none;
+color:var(--text-color)
+}
+
+.center {
+justify-content:center;
+align-items:center;
+flex-direction:column
+}
+
+.info {
+min-width:320px;
+width:390px;
+display:flex;
+background:none;
+padding:35px;
+color:var(--text-color);
+border-radius:25px;
+backdrop-filter:blur(70px);
+border:var(--text-color) solid 5px;
+box-shadow:0 4px 8px 0 rgba(0,0,0,0.2)
+}
+
+.buttons {
+min-width:300px;
+width:300px;
+display:flex;
+padding:0;
+border-radius:8px;
+-webkit-border-radius:8px;
+-moz-border-radius:8px;
+-khtml-border-radius:8px
+}
+
+a.link {
+-webkit-tap-highlight-color:rgba(0,0,0,0);
+-moz-tap-highlight-color:rgba(0,0,0,0);
+padding:8px 20px;
+margin:4px;
+background:var(--color-button);
+border:2px solid var(--text-color);
+font-size:14px;
+padding:5px 20px;
+color:#fff;
+cursor:pointer;
+border-radius:12px;
+-webkit-border-radius:12px;
+-moz-border-radius:12px;
+-khtml-border-radius:12px;
+width:256px;
+text-align:center;
+text-decoration:none;
+transition:.2s
+}
+
+.avatar-container {
+margin:0 .4em 0 0;
+display:inline-flex;
+justify-content:center;
+align-items:flex-end
+}
+
+.avatar {
+width:10em;
+height:10em;
+border-radius:5.6em;
+border:var(--text-color) solid 3px
+}
+
+.informator {
+position:relative;
+display:inline-flex;
+padding:.3em
+}
+
+a.link:hover,button:hover {
+background:var(--text-color);
+color:#fff
+}
+
+button:active,button:focus {
+outline:var(--text-color)
+}
+
+hr {
+border:none;
+margin-bottom:5px;
+margin-top:5px
+}
+
+h3 {
+font-style:normal;
+font-weight:inherit;
+transition:.2ms;
+-webkit-transition:.2ms;
+-moz-transition:.2ms
+}
+
+h2 {
+font-size:larger;
+transition:.2ms;
+-webkit-transition:.2ms;
+-moz-transition:.2ms
+}
+
+.popup {
+top:10%;
+left:0;
+right:0;
+font-size:14px;
+margin:auto;
+width:85%;
+min-width:320px;
+max-width:600px;
+position:absolute;
+padding:15px 20px;
+border:1px solid none;
+background:none;
+color:none;
+z-index:1000;
+-webkit-border-radius:14px;
+-moz-border-radius:14px;
+-ms-border-radius:14px;
+border-radius:14px;
+font:'Product Sans';
+-webkit-box-shadow:0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+-moz-box-shadow:0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+-ms-box-shadow:0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+box-shadow:0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3)
+}
+
+input[type=button] {
+-webkit-tap-highlight-color:none;
+-moz-tap-highlight-color:none;
+padding:12px 20px;
+background:none;
+color:none;
+border:none;
+cursor:pointer;
+border-radius:8px;
+-webkit-border-radius:8px;
+-moz-border-radius:8px;
+-khtml-border-radius:8px;
+margin-top:5px;
+margin-left:5px;
+margin-bottom:2px
+}
+
+input[type=button]:hover {
+background:none
+}
+
+input[type=button]:active,input[type=button]:focus {
+outline:none
+}
+
+.btn {
+-webkit-transition:.2s;
+-o-transition:.2s;
+-moz-transition:.2s;
+transition:.2s;
+font-family:'Product Sans';
+font:'Product Sans'
+}
+
+.loaderArea {
+background:linear-gradient(0deg,#FF0 0%,#00F 100%);
+overflow:hidden;
+position:fixed;
+left:0;
+top:0;
+right:0;
+bottom:0;
+z-index:100000
+}
+
+.loader {
+height:40px;
+width:40px;
+position:absolute;
+left:50%;
+margin-left:-20px;
+top:50%;
+margin-top:-20px
+}
+
+.loader:before,.loader:after {
+content:"";
+height:40px;
+width:40px;
+border:8px solid rgba(0,255,0,.5);
+border-radius:10px;
+position:absolute;
+top:0
+}
+
+.loader:before {
+animation:animate 2s infinite linear
+}
+
+button::-moz-focus-inner,button::-webkit-focus-inner {
+border:0
+}
+
+input[type=button]::-moz-focus-inner,input[type=button]::-webkit-focus-inner {
+border:none
+}
+
+@keyframes animate {
+0% {
+transform:rotate(0) skew(0)
+}
+
+100% {
+transform:rotate(180deg) skew(360deg)
+}
+}
+
+.loader:after {
+animation:animate2 2s infinite linear
+}
+
+@keyframes animate2 {
+0% {
+transform:rotate(0) skew(0)
+}
+
+100% {
+transform:rotate(-180deg) skew(-360deg)
+}
+}
